@@ -5,6 +5,6 @@ function perPlayerFieldName(inputField){
     return perplayerAmount;
 }
 function disableBtn(cardId) {
-    const card1 = document.getElementById(cardId).disabled = true;
+    document.getElementById(cardId).disabled = true;
     document.getElementById(cardId).style.backgroundColor = "gray";
 }
