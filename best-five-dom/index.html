@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>best-five-dom</title>
+    <title>The Best FIFA Men's Player</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,73 +34,72 @@
                 <div class="col-span-3 bg-gray-700 ">
                     <div class="grid grid-rows-2 grid-flow-col gap-4 w-9/12 mx-auto mt-10">
                         <!-- card 1 -->
-                        <div class="card w-full bg-base-100 shadow-xl ">
+                        <div class="card w-full bg-base-100 shadow-xl bg-black text-white">
                             <figure><img src="images/player-1.png" class="w-full h-40" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class=" text-center text-2xl font-semibold">Lionel Messi</h2>
-
                                 <div class="card-actions justify-center ">
-                                    <button onclick="addToCart(this)"
+                                    <button id="card1" onclick="addToCart(this)"
                                         class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
                                 </div>
                             </div>
                         </div>
                         <!-- card 2 -->
-                        <div class="card w-full bg-base-100 shadow-xl ">
+                        <div class="card w-full bg-base-100 shadow-xl bg-black text-white ">
                             <figure><img src="images/player-2.png" class="w-full h-40" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class=" text-center text-2xl font-semibold">Vítor Machado</h2>
 
                                 <div class="card-actions justify-center ">
-                                    <button onclick="addToCart(this)"
+                                    <button id="card2" onclick="addToCart(this)"
                                         class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
                                 </div>
                             </div>
                         </div>
                         <!-- card 3 -->
-                        <div class="card w-full bg-base-100 shadow-xl ">
+                        <div class="card w-full bg-base-100 shadow-xl bg-black text-white">
                             <figure><img src="images/player-3.png" class="w-full h-40" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class=" text-center text-2xl font-semibold"> Renato Sanches</h2>
 
                                 <div class="card-actions justify-center ">
-                                    <button onclick="addToCart(this)"
+                                    <button id="card3" onclick="addToCart(this)"
                                         class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
                                 </div>
                             </div>
                         </div>
                         <!-- card 4 -->
-                        <div class="card w-full bg-base-100 shadow-xl ">
+                        <div class="card w-full bg-base-100 shadow-xl bg-black text-white">
                             <figure><img src="images/player-4.png" class="w-full h-40" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class=" text-center text-2xl font-semibold">Neymar Jr </h2>
 
                                 <div class="card-actions justify-center ">
-                                    <button onclick="addToCart(this)"
+                                    <button id="card4" onclick="addToCart(this)"
                                         class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
                                 </div>
                             </div>
                         </div>
                         <!-- card 5 -->
-                        <div class="card w-full bg-base-100 shadow-xl ">
+                        <div class="card w-full bg-base-100 shadow-xl bg-black text-white">
                             <figure><img src="images/player-5.png" class="w-full h-40" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class=" text-center text-2xl font-semibold"> Sergio Ramos </h2>
 
                                 <div class="card-actions justify-center ">
-                                    <button onclick="addToCart(this)"
+                                    <button id="card5" onclick="addToCart(this)"
                                         class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
                                 </div>
                             </div>
                         </div>
                         <!-- card 6 -->
-                        <div class="card w-full bg-base-100 shadow-xl ">
+                        <div class="card w-full bg-base-100 shadow-xl bg-black text-white">
                             <figure><img src="images/player-6.png" class="w-full h-40" alt="Shoes" /></figure>
                             <div class="card-body">
                                 <h2 class=" text-center text-2xl font-semibold">Kylian Mbappé</h2>
 
                                 <div class="card-actions justify-center ">
-                                    <button onclick="addToCart(this)"
+                                    <button id="card6" onclick="addToCart(this)"
                                         class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
                                 </div>
                             </div>
@@ -109,18 +108,18 @@
                 </div>
                 <!-- aside item start  -->
                 <div>
-                    <div class="grid grid-rows-2 grid-flow-col gap-4">
+                    <div class="grid grid-rows-2 grid-flow-col gap-4" >
                         <!-- selected part start  -->
                         <div class="overflow-x-auto  bg-black ">
                             <h2 class="text-2xl text-center text-white my-5">Selected - V</h2>
-                            <ul id="selected-v"
-                                class="list-decimal list-inside marker:text-white-500 text-white px-10 text-left font-semibold">
-                                <LI>The first item</LI>
-                                <li>The second item</li>
-                                <li>The third item</li>
-                                <li>The second item</li>
-                                <li>The third item</li>
-                            </ul>
+                             
+                            <div id="selected-v"class="list-decimal list-inside marker:text-white-500 text-white px-10 text-left font-semibold">
+                                <!-- <ul >
+                                <li>The first item</li>
+                               
+                            </ul> -->
+                            </div>
+                           
                         </div>
                         <!-- selected part end  -->
                         <!-- Budget part start  -->
@@ -136,7 +135,7 @@
                                 <div class="md:w-2/4">
                                     <input
                                         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                        id="income-value" type="number" placeholder="10000">
+                                        id="per-player" type="number" placeholder="1000">
                                 </div>
                             </div>
                             <div class="md:flex md:items-center">
@@ -150,7 +149,8 @@
                                 </div>
                             </div>
 
-                            <h3 class="text-1xl text-center mb-4  text-white font-semibold">Player Expenses</h3>
+                            <h3 class="text-1xl text-center mb-4  text-white font-semibold">Player Expenses: $ <span
+                                class=" text-white" id="player-expenses">00</span></h3>
                             <div class="md:flex md:items-center mb-6">
                                 <div class="md:w-1/3">
                                     <label class="block  text-white font-bold md:text-right mb-1 md:mb-0 pr-4"
@@ -161,7 +161,7 @@
                                 <div class="md:w-2/4">
                                     <input
                                         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                        id="food" type="number" placeholder="3000">
+                                        id="manager" type="number" placeholder="2000">
                                 </div>
                             </div>
                             <div class="md:flex md:items-center mb-6">
@@ -174,13 +174,13 @@
                                 <div class="md:w-2/4">
                                     <input
                                         class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                                        id="rent" type="number" placeholder="2000">
+                                        id="coach" type="number" placeholder="4000">
                                 </div>
                             </div>
                             <div class="md:flex md:items-center">
                                 <div class="md:w-1/3"></div>
                                 <div class="md:w-2/3">
-                                    <button id="calculate_btn"
+                                    <button id="calculate_total_btn"
                                         class="shadow bg-sky-700 text-white hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
                                         type="button">
                                         Calculate Total
@@ -188,7 +188,7 @@
                                 </div>
                             </div>
                             <h3 class="text-1xl text-center mb-4  text-white font-semibold mt-5">Total <span
-                                    class=" text-red-600" id="total-expenses">00</span></h3>
+                                    class=" text-red-600" id="total-calculate">00</span></h3>
                         </div>
                     </div>
                     <!-- budget part end  -->
@@ -206,8 +206,8 @@
     <!-- footer end -->
 
 
-
-
+<script src="js/utilities.js"></script>
+<script src="js/players.js"></script>
 </body>
 
 </html>
