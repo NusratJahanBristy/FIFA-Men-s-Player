@@ -6,24 +6,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>best-five-dom</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-800">
+    <!-- header section start -->
     <header>
         <div class="w-full bg-center" style="height:32rem; ">
-
             <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
                 <div class="text-center ">
                     <h1 class="text-red-500 text-6xl font-semibold uppercase ">The Best FIFA Men's Player</h1>
-                    <p class="text-white text-2xl">“In football everything is complicated by the presence of the
-                        opposite team.”</p>
+                    <p class="text-white text-2xl">In football everything is complicated by the presence of the
+                        opposite team.</p>
                     <!-- <img  src="images/header-player.png" alt=""> -->
                 </div>
             </div>
         </div>
     </header>
+    <!-- header section end -->
+    <!-- main section start -->
+
+    <main>
+        <section class="mt-10">
+            <div class="grid grid-cols-4 grid-flow-col gap-4">
+                <div class="col-span-3 bg-gray-700 ">
+                    <div class="grid grid-rows-2 grid-flow-col gap-4 w-9/12 mx-auto mt-10">
+                        <!-- card 1 -->
+                        <div class="card w-full bg-base-100 shadow-xl ">
+                            <figure><img src="images/player-1.png" class="w-full h-40" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class=" text-center text-2xl font-semibold">Lionel Messi</h2>
+
+                                <div class="card-actions justify-center ">
+                                    <button onclick="addToCart(this)"
+                                        class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="card w-full bg-base-100 shadow-xl ">
+                            <figure><img src="images/player-2.png" class="w-full h-40" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class=" text-center text-2xl font-semibold">Vítor Machado</h2>
+
+                                <div class="card-actions justify-center ">
+                                    <button onclick="addToCart(this)"
+                                        class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+                        <div class="card w-full bg-base-100 shadow-xl ">
+                            <figure><img src="images/player-3.png" class="w-full h-40" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class=" text-center text-2xl font-semibold"> Renato Sanches</h2>
+
+                                <div class="card-actions justify-center ">
+                                    <button onclick="addToCart(this)"
+                                        class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 4 -->
+                        <div class="card w-full bg-base-100 shadow-xl ">
+                            <figure><img src="images/player-4.png" class="w-full h-40" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class=" text-center text-2xl font-semibold">Neymar Jr </h2>
+
+                                <div class="card-actions justify-center ">
+                                    <button onclick="addToCart(this)"
+                                        class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 5 -->
+                        <div class="card w-full bg-base-100 shadow-xl ">
+                            <figure><img src="images/player-5.png" class="w-full h-40" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class=" text-center text-2xl font-semibold"> Sergio Ramos </h2>
+
+                                <div class="card-actions justify-center ">
+                                    <button onclick="addToCart(this)"
+                                        class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card 6 -->
+                        <div class="card w-full bg-base-100 shadow-xl ">
+                            <figure><img src="images/player-6.png" class="w-full h-40" alt="Shoes" /></figure>
+                            <div class="card-body">
+                                <h2 class=" text-center text-2xl font-semibold">Kylian Mbappé</h2>
+
+                                <div class="card-actions justify-center ">
+                                    <button onclick="addToCart(this)"
+                                        class="text-white bg-sky-700 mt-5 py-2 px-20">SELECT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+
+
+
+    
 </body>
 
 </html>
